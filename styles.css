@@ -1,0 +1,281 @@
+/* Basic Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Navbar Styling */
+header {
+  background-color: #577203;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #cfbb08;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/img/hero.jpg);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(34, 17, 1);
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-family: Poppins;
+  background-color: #6f5305;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: #577203;
+}
+
+/* Carousel Section Styling */
+.carousel-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Text above the Carousel */
+.carousel-text {
+  margin-bottom: 2rem;
+}
+
+.carousel-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.carousel-text p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f3cc0d5a;
+    backdrop-filter: blur(30px);
+    top: 60px;
+    right: 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: rgb(13, 12, 12);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 600px;
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.accordion-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.accordion h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.accordion-button:hover {
+  background-color: #004999;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  display: none;
+}
+
+.map-section {
+  padding: 2rem;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  border-radius: 0.5rem;
+}
+
+footer {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
