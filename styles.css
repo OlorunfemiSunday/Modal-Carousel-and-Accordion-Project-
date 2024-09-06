@@ -242,7 +242,7 @@ header {
 .accordion-button {
   width: 100%;
   padding: 1rem;
-  background-color: #0066cc;
+  background-color: #6f5305;
   color: white;
   border: none;
   text-align: left;
@@ -251,7 +251,7 @@ header {
 }
 
 .accordion-button:hover {
-  background-color: #004999;
+  background-color: #577203;
 }
 
 .accordion-content {
@@ -273,7 +273,7 @@ header {
 }
 
 footer {
-  background-color: #0066cc;
+  background-color: #577203;
   color: white;
   text-align: center;
   padding: 1rem 0;
